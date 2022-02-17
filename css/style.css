@@ -7,7 +7,7 @@
 
 /* classi replicabili */
 
-.row, .row-2{
+.row, .row-1-2{
     border: 1px solid red;
     width: 80%;
     margin: auto;
@@ -42,7 +42,7 @@
     width: 30%;
     display: inline-block;
     /* background-color: blue; */
-    margin: 0 20px;
+    margin: 0 17px;
     height: 100px;
 }
 
@@ -53,15 +53,16 @@
 .nome-prodotto {
     font-size: 20px;
     font-weight: bold;
-    margin-top;
 }
 
 .prezzo-scontato {
     font-size: 15px;
     color: red;
+    font-weight: bolder;
 }
 
 .prezzo-vecchio {
     font-size: 15px;
     margin-left: 5px;
+    text-decoration: line-through;
 }
