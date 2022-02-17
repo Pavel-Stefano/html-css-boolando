@@ -1,0 +1,28 @@
+/* rest */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border:  0;
+}
+
+.row {
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    font-size: 0;
+}
+
+.box {
+    height: 500px;
+    border: 1px solid black;
+    width: calc(100% / 3);
+    display: inline-block;
+    
+}
+
+.box-2 {
+    height: 80% ;
+    border: 1px solid black;
+    width: 100%;
+    display: inline-block;
+}
