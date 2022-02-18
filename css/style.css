@@ -7,62 +7,74 @@
 
 /* classi replicabili */
 
-.row, .row-1-2{
-    border: 1px solid red;
-    width: 80%;
-    margin: auto;
+main{
+    width: 900px;
+    margin:30px auto;
     font-size: 0;
 }
 
-/* riga-1 */
-
-.box {
-    height: 500px;
-    border: 1px solid black;
-    width: 30%;
+.card {
+    width: 300px;
     display: inline-block;
-    background-color: blue;
-    margin: 20px 17px;
+    font-size: 14px;
+    text-align: middle;
+    padding: 20px;
 }
 
-
-.immagine-1, img {
+.card-image img {
     width: 100%;
-    height: 100%;
 }
 
-
-.row-2 {
-    /* background-color: yellow; */
-    height: 100px;
+.card-image {
+    position: relative;
 }
 
-.box-2 {
-    border: 1px solid black;
-    width: 30%;
-    display: inline-block;
-    /* background-color: blue; */
-    margin: 0 17px;
-    height: 100px;
+.heart {
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: white;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
 }
 
-.marca {
-    font-size: 15px;
+.heart:hover {
+    color: red;
 }
 
-.nome-prodotto {
-    font-size: 20px;
-    font-weight: bold;
+.label {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    color: white;
 }
 
-.prezzo-scontato {
-    font-size: 15px;
+.card-discount {
+    background-color: red;
+}
+
+.card-tag {
+    background-color: green;
+}
+
+.overlay {
+    display: none;
+}
+
+.card-image:hover .overlay{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.price {
     color: red;
     font-weight: bolder;
 }
 
-.prezzo-vecchio {
-    font-size: 15px;
-    margin-left: 5px;
+.price-old {
     text-decoration: line-through;
 }
